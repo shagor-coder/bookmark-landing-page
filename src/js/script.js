@@ -99,6 +99,7 @@ menuLinks.forEach(function(menuLinks){
     menuLinks.addEventListener('click', () => {
         mobileMenu.classList.remove('active');
         toggleMenu.classList.toggle('active');
+        bodyLock.classList.remove('active')
     })
 })
 
