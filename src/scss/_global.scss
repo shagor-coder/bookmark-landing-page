@@ -1,0 +1,166 @@
+
+// Importing Google Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+
+html{
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+body,
+*,*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
+
+    &.active{
+        overflow-y: hidden;
+    }
+}
+
+ul,li,a{
+    list-style: none;
+    text-decoration: none;
+}
+
+section{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 2.5rem 0;
+}
+
+// Global Cta
+.btn{
+    display: inline-block;
+    padding: 0.5rem 1rem !important;
+    @include font400;
+    color: $White !important;
+    border-radius: 0.3125rem;
+    background: $SoftRed;
+    box-shadow: 0 2px 5px $VeryDarkBlue;
+    transition: all .3s ease;
+
+    &:hover{
+        background: $VeryDarkBlue;
+    }
+}
+// Screen Spacing
+.container{
+    max-width: 1200px;
+    height: auto;
+    margin: auto;
+    padding: 0 2rem;
+
+    @media (max-width:600px){
+        padding: 0 1rem;
+    }
+}
+
+.row{
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    gap: .5rem;
+   
+    @media (max-width:768px){
+        &__cl-sm-100{
+            width: 100%;
+            height: 100%;
+            flex-basis: 100%;
+        }
+    }
+
+    @media (min-width:768px){
+
+        &__cl-md-50{
+            width: 49%;
+            height: 100%;
+            flex-basis: 49%;
+        }
+        &__cl-md-45{
+            width: 44%;
+            height: 100%;
+            flex-basis: 44%;
+        }
+        &__cl-md-55{
+            width: 54%;
+            height: 100%;
+            flex-basis: 54%;
+        }
+
+        &__cl-lg-25{
+            width: 24%;
+            height: 100%;
+            flex-basis: 24%;
+        }
+        &__cl-lg-33{
+            width: 32%;
+            height: 100%;
+            flex-basis: 32%;
+        }
+        &__cl-lg-75{
+            width: 74%;
+            height: 100%;
+            flex-basis: 74%;
+        }
+        &__cl-lg-67{
+            width: 66%;
+            height: 100%;
+            flex-basis: 66%;
+        }
+        &__cl-lg-50{
+            width: 49%;
+            height: 100%;
+            flex-basis: 49%;
+        }
+    }
+    @media (min-width:1180px){
+        &__cl-xl-25{
+            width: 24%;
+            height: 100%;
+            flex-basis: 24%;
+        }
+    }
+}
+
+.p{
+    padding: 1rem;
+    &__r-1{
+        padding-right: 3rem;
+    }
+}
+
+.flex{
+    display: flex;
+    flex-basis: auto;
+    align-items: center;
+    &__cen{
+        justify-content: center;
+    }
+    &__bt{
+        justify-content: space-between;
+    }
+    &__end{
+        justify-content: flex-end;
+    }
+
+    @media  (max-width:768px) {
+        flex-direction: column;
+    }
+}

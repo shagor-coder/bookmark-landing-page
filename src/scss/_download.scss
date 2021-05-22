@@ -1,0 +1,74 @@
+.download{
+    text-align: center;
+    margin-top: 25rem;
+
+    &__title{
+        @include font500;
+    }
+    &__des{
+        @include font400;
+        padding: 2rem 0;
+    }
+
+    .row{
+
+        &__cl-lg-33:nth-child(2){
+            margin-top: 4rem;
+        }
+        &__cl-lg-33:nth-child(3){
+            margin-top: 8rem;
+        }
+
+        @media (max-width: 768px){
+            &__cl-lg-33:nth-child(2){
+                margin-top: 0rem;
+            }
+
+            &__cl-lg-33:nth-child(3){
+                margin-top: 0rem;
+            }
+        }
+    }
+    .card{
+        width: 100%;
+        min-height: 23.45rem;
+        padding: 2rem 0 1rem 0;
+        box-shadow: 0.125rem 0.0625rem 0.275rem $SoftBlue;
+        border-radius: 0.625rem;
+        transition: all 0.3s ease;
+
+        &:hover{
+            box-shadow: 0.125rem 0.0625rem 0.275rem $VeryDarkBlue;
+        }
+
+        &__img{
+            padding-bottom: 1rem;
+            img{
+                max-width: 100%;
+            }
+        }
+
+        &__title{
+            @include font500;
+            padding-bottom: 1rem;
+        }
+        &__des{
+            @include font400;
+            padding-bottom: 1rem;
+        }
+        &__img1{
+            padding: 1rem 0;
+
+            img{
+                max-width: 100%;
+            }
+        }
+        &__cta{
+            margin: 1rem 0;
+        }
+    }
+
+    @media (max-width: 768px){
+        padding-top: 23rem;
+    }
+}

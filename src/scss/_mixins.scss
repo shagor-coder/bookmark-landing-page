@@ -1,0 +1,18 @@
+@mixin font600 {
+    font-size: 2.22rem;
+    font-weight: 700;
+    color: $VeryDarkBlue;
+    letter-spacing: 1px;
+}
+@mixin font500 {
+    font-size: 1.625rem;
+    font-weight: 600;
+    color: $VeryDarkBlue;
+    letter-spacing: 1px;
+}
+@mixin font400 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: $VeryDarkBlue;
+    letter-spacing: 1px;
+}
